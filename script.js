@@ -1,4 +1,4 @@
-const API_URL = "https://your-backend-url.onrender.com";
+const API_URL = "https://bb-k19r.onrender.com";
 
 document.getElementById("studentForm").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -23,7 +23,7 @@ async function loadStudents() {
   const list = document.getElementById("studentList");
   list.innerHTML = "";
   students.forEach((s) => {
-    list.innerHTML += `<div>${s.name} - ${s.course} - ₹${s.feesPaid} 
+    list.innerHTML += `<div>${s.name} - ${s.course} - ₹${s.feesPaid} 
       <button onclick="deleteStudent('${s._id}')">Delete</button></div>`;
   });
 }
